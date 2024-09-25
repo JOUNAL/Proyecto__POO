@@ -14,4 +14,7 @@ El programa permite encontrar las raices de ecuaciones de maximo grado 6 con 5 d
 Para los primeros cuatro metodos numericos, se necesita ingresar los coeficientes del polinomio como se indica en la parte superior, y tambien el error que requiera el usuario para las raices, luego, se hara click en el boton "Calcular raices", lo cual mostrara los resultados de los primeros 4 metodos y el tiempo de ejecucion de cada uno, si no se encuentra niguna raiz de la ecuacion dada, se le avisara al usuario mediante un texto
 
 
-## Metodo 1: 
+## Metodo 1: Metodo de la biseccion
+Estr es sencillo, solo se busca donde la función cambia de signo, se toma ese valor(X1), el valor anterior(X0), y encuentra la mitad entre esos dos puntos, luego verifica si ese punto en la funcion, es negativo o positivo, si es negativo, ese punto medio se vuelve el nuevo X1 y si es positivo, ese valor es el nuevo X0, hasta que se llegué al error deseado, este metodo tiene la peculiariadad de siempre encontrar las raices de una funcion, pero no con una buena precision
+
+## Metodo 2: Metodo de la secante 
