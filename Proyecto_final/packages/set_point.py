@@ -1,3 +1,4 @@
+#Este paquete se encarga de la gestion del metodo del punto fijo
 def set_point_method(Funcion1,Error_input):
     i=0
     x=0
