@@ -1,3 +1,4 @@
+#Este paquete se encarga de la gestion del metodo de la falsa posicion
 from packages.base_function import *
 def false_position(Funcion1,Error_input):
     for points in Funcion1.cut_points:
