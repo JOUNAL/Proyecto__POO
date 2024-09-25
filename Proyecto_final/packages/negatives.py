@@ -1,3 +1,4 @@
+#Este paquete se encarga de la gestion de encontrar en que puntos la ecuacion cambia de signo o encontrar las raices directas si es un numero entero
 from packages.base_function import *
 i=-1000
 numbers=[]
