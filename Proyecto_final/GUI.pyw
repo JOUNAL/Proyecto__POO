@@ -3,7 +3,7 @@ from packages.base_function import *
 from packages.negatives import *
 from packages.set_point import *
 
-def get_equation():
+def get_equation(): #Esta funcion se encarga de poner todas las casillas donde van las raices primero en 0, obtiene los valores de los coeficientes, obtiene las raices de acuardo a cada metodo y pones las raices en las casillas correspondientes
     caja1_a.delete(0,'end')
     caja2_a.delete(0,'end')
     caja3_a.delete(0,'end')
@@ -88,12 +88,14 @@ def get_equation():
         pass
     
 
-def get_root_set_point():
+def get_root_set_point(): #Esta funcion se encarga del metodo del punto fijo, donde se llama a la funcion correspondiente y despues introduce el resultado en la caja de abajo
     caja3_f.delete(0,'end')
     point_set_equation=caja1_f.get()
     point_set_error=eval(caja8_f.get())
     caja3_f.insert(0,set_point_method(Funcion1=point_set_equation,Error_input=point_set_error))
-    
+
+
+#De aqui en adelante, se genera la GUI para facilitar el uso con el usuario
 
 
 ventana = tkinter.Tk()
@@ -464,17 +466,6 @@ texto3_f.grid(row=18,column=4,pady=4)
 caja3_f= tkinter.Entry(ventana)
 caja3_f.grid(row=18,column=5,pady=4)
 caja3_f.insert(0, '0')
-
-
-
-'''cajatexto = tkinter.Entry(ventana)
-cajatexto.pack()
-
-def TextoCaja1():
-    texto_test= cajatexto.get()
-    print(texto_test)
-boton1 = tkinter.Button(ventana, text="Presionar", command= TextoCaja1)
-boton1.pack()'''
 
 
 ventana.mainloop()
