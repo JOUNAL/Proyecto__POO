@@ -1,3 +1,4 @@
+#Este paquete se encarga de la gestion del metodo de la biseccion
 from packages.base_function import *
 def biseccion(Funcion1,Error_input):
     for points in Funcion1.cut_points:
