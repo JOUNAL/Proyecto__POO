@@ -1,3 +1,4 @@
+#Este paquete se encarga de la gestion del metodo de Newton
 from packages.base_function import *
 def newton(Funcion1,Error_input):
     for points in Funcion1.cut_points:
