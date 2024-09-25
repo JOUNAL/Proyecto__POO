@@ -5,7 +5,11 @@ from packages.newton_method import *
 from packages.secant_method import *
 from packages.false_position_method import *
 
-class MethodsNumerics :
+
+#A partir de aca se define lo que seria la clase Methods Numerics para la funcion a la que se le van a hayar las raices
+
+
+class MethodsNumerics : 
     def __init__(self,components_function,Error:float) -> None:
         self.inputed_function=0
         self.derivated_function=0
@@ -101,36 +105,3 @@ class MethodsNumerics :
         F_derivated=self.G_part*6
         self.derivated_function=(f"{A_derivated}+{B_derivated}*x+{C_derivated}*x**2+{D_derivated}*x**3+{E_derivated}*x**4+{F_derivated}*x**5")
     
-
-
-
-
-
-
-
-
-
-    """class MethodsNumerics :                        CODIGO VIEJO, PARA COMPARAR
-    def __init__(self,desired_function) -> None:
-        self.inputed_function=desired_function
-
-    def something(self):
-        deastract=compile(self.inputed_function,"<string>","eval")
-        output_function=eval(deastract)
-        return output_function
-
-
-from packages.base_function import *
-abstract=input("Digite la funcion a evaluar:")
-Funcion1=MethodsNumerics(desired_function=abstract)
-print(Funcion1.inputed_function)
-print(MethodsNumerics.something())
-----------------------------------------------------------------------------------------
-def input_function(desired_function,x):
-    deastract=compile(desired_function,"<string>","eval")
-    output_function=eval(deastract)
-    return output_function
-
-from packages.base_function import input_function
-abstract=input("Digite la funcion a evaluar:")
-print(input_function(abstract,2))"""
