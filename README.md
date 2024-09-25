@@ -15,6 +15,13 @@ Para los primeros cuatro metodos numericos, se necesita ingresar los coeficiente
 
 
 ## Metodo 1: Metodo de la biseccion
-Estr es sencillo, solo se busca donde la función cambia de signo, se toma ese valor(X1), el valor anterior(X0), y encuentra la mitad entre esos dos puntos, luego verifica si ese punto en la funcion, es negativo o positivo, si es negativo, ese punto medio se vuelve el nuevo X1 y si es positivo, ese valor es el nuevo X0, hasta que se llegué al error deseado, este metodo tiene la peculiariadad de siempre encontrar las raices de una funcion, pero no con una buena precision
+Este es sencillo, solo se busca donde la función cambia de signo, se toma ese valor(X1), el valor anterior(X0), y encuentra la mitad entre esos dos puntos, luego verifica si ese punto en la funcion, es negativo o positivo, si es negativo, ese punto medio se vuelve el nuevo X1 y si es positivo, ese valor es el nuevo X0, hasta que se llegué al error deseado, este metodo tiene la peculiariadad de siempre encontrar las raices de una funcion, pero no con una buena precision
 
 ## Metodo 2: Metodo de la secante 
+Este metodo se centra en hallar la pendiente entre dos puntos de la funcion, se encuentra la solución oara esa recta donde f(x)=0 y se reemplaza en la ecuación original, este punto se reemplaza por uno de los puntos anteriormente mencionados para hallar la recta y se repite el proceso hasta que se llegue al error deseado
+
+## Metodo 3: Metodo Newton
+Aunque el metodo de la secante y el metodo de Newton fueron desarrollados independientemente, ambos usan la pendiente para poder hallar las raices de una ecuacion, el método de Newton aplica directamente la derivada de la funcion, y cada punto nuevo que se vaya encontrando va a ser el reemplazo directo en la ecuacion y lo podra hallar con mayor rapidez
+
+## Metodo 4: Metodo de la falsa posicion
+El metodo de la falsa posicion se podria decir que es una combinación del método de la biseccion, para asegurar que en ese intervalo se encuentra una raiz de la funcion, y el metodo de la secante, intentand
